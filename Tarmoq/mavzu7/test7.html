@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATUFF - Kiber huquq va kiberetika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menyu {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 0px 30px;
+        }
+        .header {
+            background-color: #fff;
+            color: white;
+            text-align: center;
+            display: flex;
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            justify-content: flex-start;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding-top: 13px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            justify-content: flex-end;
+        }
+        .nav a {
+            color: #272828;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .nav a:hover{
+            color: #5fcf80;
+        }
+        .active {
+            color: #5fcf80;
+        }
+        .content {
+            padding-top: 20px;
+            padding-bottom: 0px;
+            text-align: center;
+            background-color:#5fcf80;
+        }
+        .content h1 {
+            margin-bottom: 20px;
+            color: #fff;
+            padding: 20px;
+        }
+        .breadcrumb {
+            padding: 20px 30px;
+            background-color:#4dc872;
+            font-size: 20px;
+            font-family:sans-serif;
+            text-align: left;
+        }
+        .breadcrumb a  {
+            color: #fff;
+            text-decoration: none;
+            border: 3px solid #4dc872;
+            padding: 8px 10px;
+        }
+        .breadcrumb a:hover {
+            color:rgb(228, 226, 226);
+            text-decoration: underline;
+        }
+        .breadcrumb  .aktive {
+            color:rgb(244, 53, 27);
+        }
+        .text-area {
+            padding: 20px;
+            background-color:rgb(243, 239, 234);
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            color: black;
+        }
+        .text-area h2, h3 {
+            text-align: center;
+        }
+        .text-area pre {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #quiz {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 2%;
+            padding: 80px;
+            background-color: #66ebf0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
+            
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        #question {
+            margin-bottom: 20px;
+        }
+        #options {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: rgb(227, 238, 10);
+            color: #131313;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8f8d8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="menyu">
+        <div class="header">
+            <a href="#" style="color: #5fcf80; text-decoration: none;"><h1>TATUFF</h1></a>
+        </div>
+        <div class="nav">
+            <a href="../index.html"><h3>Bosh sahifa</h3></a>
+            <a href="../courses.html" class="active"><h3>Mavzular</h3></a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Kiberhuquq va kiberetika</h1>
+        <div class="breadcrumb">
+            <a href="maruza7.html">Maruza</a>
+            <a href="amaliy7.html">Amaliy</a>
+            <a href="test7.html"  class="aktive">Mavzu yuzasidan test</a>
+        </div>
+    </div>
+    <div id="quiz">
+        <h1>Kiber xuquq va kiber-etika fanining maqsad va vazifalari</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit">Submit</button>
+    </div>
+    <script>
+        
+    
+        const quizData = [
+        {
+            "question": "Xalqaro miqyosdagi standartlar nimani anglatadi?",
+            "options": [
+                "Mahalliy darajada axborot xavfsizligini boshqarish qoidalari",
+                "Axborot xavfsizligini boshqarish bo'yicha umumiy xalqaro qoidalar va standartlar",
+                "Axborot texnologiyalaridan foydalanishni cheklovchi qoidalar",
+                "Axborot xavfsizligi bo'yicha huquqiy majburiyatlar"
+            ],
+            "answer": "Axborot xavfsizligini boshqarish bo'yicha umumiy xalqaro qoidalar va standartlar"
+        },
+        {
+            "question": "ISO/IEC 27002 standarti nimani ifodalaydi?",
+            "options": [
+                "Axborot xavfsizligini boshqarish tizimlarini tashkil qilish bo'yicha talablar",
+                "Shaxsiy ma'lumotlarni himoya qilish bo'yicha qoidalar",
+                "Axborot xavfsizligini ta'minlash metodlari bo'yicha amaliy qoidalar",
+                "Axborot xavfsizligini boshqarish bo'yicha qonunlar"
+            ],
+            "answer": "Axborot xavfsizligini ta'minlash metodlari bo'yicha amaliy qoidalar"
+        },
+        {
+            "question": "Qaysi yil ISO/IEC 27001 standarti ISO/IEC 17799 nomi bilan qayta qabul qilingan?",
+            "options": [
+                "1998",
+                "2000",
+                "2005",
+                "2007"
+            ],
+            "answer": "2000"
+        },
+        {
+            "question": "O'zbekiston Respublikasida axborot xavfsizligini ta'minlash markazi qachon tashkil etilgan?",
+            "options": [
+                "1997",
+                "2004",
+                "2013",
+                "2009"
+            ],
+            "answer": "2013"
+        },
+        {
+            "question": "RH 45-215:2009 rahbar hujjatida nima haqida gap boradi?",
+            "options": [
+                "Axborot xavfsizligini boshqarish bo'yicha xalqaro standartlar",
+                "Ma'lumotlar uzatish tarmog'ida axborot xavfsizligini ta'minlash",
+                "Axborot tizimlarini himoya qilish",
+                "Axborot xavfsizligini tashkil etishning huquqiy asoslari"
+            ],
+            "answer": "Ma'lumotlar uzatish tarmog'ida axborot xavfsizligini ta'minlash"
+        },
+        {
+            "question": "Ma'lumotlar xavfsizligi bo'yicha Fransiyaning direktivasi qachon kuchga kirgan?",
+            "options": [
+                "1998",
+                "2004",
+                "2003",
+                "2008"
+            ],
+            "answer": "2004"
+        },
+        {
+            "question": "O'zbekiston Respublikasining \"Axborot olish kafolatlari va erkinligi to'g'risida\"gi qonuni qachon qabul qilingan?",
+            "options": [
+                "1997",
+                "2004",
+                "2013",
+                "2009"
+            ],
+            "answer": "1997"
+        },
+        {
+            "question": "Italiyaning ma'lumotlar xavfsizligi kodeksi qachon qabul qilingan?",
+            "options": [
+                "1998",
+                "2004",
+                "2003",
+                "2008"
+            ],
+            "answer": "2003"
+        },
+        {
+            "question": "O'zbekiston Respublikasining \"Axborotlashtirish to'g'risida\"gi qonuni qachon qabul qilingan?",
+            "options": [
+                "1997",
+                "2004",
+                "2013",
+                "2003"
+            ],
+            "answer": "2003"
+        },
+        {
+            "question": "RH 45-024:2009 rahbar hujjatida qaysi sohada axborot xavfsizligini ta'minlash tizimi haqida gapirilgan?",
+            "options": [
+                "Ma'lumotlar uzatish tarmog'ida",
+                "Axborot tizimlarida",
+                "Aloqa va axborotlashda",
+                "Elektron hukumat tizimlarida"
+            ],
+            "answer": "Aloqa va axborotlashda"
+        }
+    ];
+
+
+        const questionElement = document.getElementById("question");
+        const optionsElement = document.getElementById("options");
+        const submitButton = document.getElementById("submit");
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function showQuestion() {
+            const question = quizData[currentQuestion];
+            questionElement.innerText = question.question;
+
+            optionsElement.innerHTML = "";
+            question.options.forEach(option => {
+                const button = document.createElement("button");
+                button.innerText = option;
+                optionsElement.appendChild(button);
+                button.addEventListener("click", selectAnswer);
+            });
+        }
+
+        function selectAnswer(e) {
+            const selectedButton = e.target;
+            const answer = quizData[currentQuestion].answer;
+
+            if (selectedButton.innerText === answer) {
+                score++;
+            }
+
+            currentQuestion++;
+
+            if (currentQuestion < quizData.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            document.getElementById('quiz').innerHTML = `
+                <h1>Test yakunlandi</h1>
+                <p>Sizning natijangiz: ${score}/${quizData.length}</p>
+            `;
+        }
+
+        showQuestion();
+    </script>
+</body>
+</html>

@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATUFF - Kiber huquq va kiberetika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menyu {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 0px 30px;
+        }
+        .header {
+            background-color: #fff;
+            color: white;
+            /* padding: 20px 0; */
+            text-align: center;
+            display: flex;
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            justify-content: flex-start;
+        }
+       
+        /* .nav .tatuf {
+            display: flex;
+            justify-content: flex-start;
+        } */
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding-top: 13px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            justify-content: flex-end;
+           
+        }
+        
+        .nav a {
+            color: #272828;
+            margin: 0 15px;
+            text-decoration: none;
+           
+        }
+        .nav a:hover{
+            color: #5fcf80;
+        }
+        .active {
+            color: #5fcf80;
+        }
+        .content {
+            padding-top: 20px;
+            padding-bottom: 0px;
+            text-align: center;
+            background-color:#5fcf80;
+            
+        }
+        .content h1 {
+            margin-bottom: 20px;
+            color: #fff;
+            padding: 20px;
+        }
+        .breadcrumb {
+            /* text-align: center; */
+            padding: 20px 30px;
+            background-color:#4dc872;
+            font-size: 20px;
+            font-family:sans-serif;
+            text-align: left;
+        }
+        .breadcrumb a  {
+            color: #fff;
+            text-decoration: none;
+            border: 3px solid #4dc872;
+            padding: 8px 10px;
+
+        }
+        .breadcrumb a:hover {
+            color:rgb(228, 226, 226);
+            text-decoration: underline;
+        }
+        .breadcrumb  .aktive {
+            color:rgb(244, 53, 27);
+        }
+        .text-area {
+            padding: 20px;
+            background-color:rgb(243, 239, 234);
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            color: black;
+        }
+        .text-area h2, h3 {
+            text-align: center;
+        }
+        .text-area pre {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+      
+    </style>
+</head>
+<body>
+    
+        
+   <div class="menyu">
+    <div class="header">
+        <a href="#" style="color: #5fcf80; text-decoration: none;"><h1>TATUFF</h1></a>
+    </div>
+    <div class="nav">
+        
+        <a href="../index.html"><h3>Bosh sahifa</h3></a>
+        <a href="../courses.html" class="active"><h3>Mavzular</h3></a>
+        
+        
+    </div>
+   </div>
+    <div class="content">
+        <h1>Kiber huquq va kiberetika</h1>
+        
+        <div class="breadcrumb">
+            <a href="maruza9.html" class="aktive">Maruza</a> 
+            <a href="amaliy9.html" >Amaliy</a> 
+            <a href="test9.html">Mavzu yuzasidan test</a>
+        </div>
+       
+    </div>
+    <div class="text-area">
+        <span lang="uz-Cyrl-UZ" style="margin-left: 45%;"><b>9-MA’RUZA</b></span></p>
+<p lang="uz-Cyrl-UZ" class="western" align="center" style="line-height: 100%; margin-bottom: 0in">
+<br/>
+
+</p>
+<p class="western" align="center" style="line-height: 150%; margin-bottom: 0in">
+<span lang="uz-Cyrl-UZ"><b>KIBERXAVFSIZLIK BUZGʻ</b></span><span lang="en-US"><b>U</b></span><span lang="uz-Cyrl-UZ"><b>NCHISINING
+GIPOTETIK MODELI</b></span></p>
+<p class="western" align="center" style="line-height: 150%; margin-bottom: 0in">
+<span lang="en-US"><b>Reja: </b></span>
+</p>
+<ol>
+	<li><h2 lang="en-US" class="western" style="line-height: 150%; margin-top: 0in; margin-bottom: 0in">
+	<span lang="ru-RU"><span style="font-style: normal"><span style="font-weight: normal">Xarrison-Ruzzo-Ullman
+	modeli</span></span></span></h2></li>
+	<li><p style="line-height: 150%; margin-bottom: 0in"><span lang="en-US">Bell
+	va Lapadula majburiy kirish modeli</span></p></li>
+	<li><p style="line-height: 150%; margin-bottom: 0in">Gogen-Mesiger
+	modeli</p></li>
+</ol>
+<p class="western" style="line-height: 150%; text-indent: 0.49in; margin-bottom: 0in">
+Axborot tizimlarini himoya qilish texnologiyasi nisbatan yaqinda
+rivojlana boshladi, ammo bugungi kunda xavfsizlikning deyarli barcha
+jihatlarini tavsiflash va himoya vositalarini rasmiy tasdiqlangan
+algoritmik asos bilan ta'minlash imkonini beruvchi juda ko'p nazariy
+modellar mavjud. Biroq, amalda, bu tadqiqotlar natijalaridan
+foydalanish har doim ham mumkin emas, chunki ko'pincha himoya
+nazariyasi haqiqiy hayotga mos kelmaydi. Gap shundaki, axborot
+tizimlarini himoya qilish sohasidagi nazariy tadqiqotlar tarqoq
+bo‘lib, xavfsizlikning yaxlit nazariyasini tashkil etmaydi. Mavjud
+barcha nazariy ishlanmalar muammoga turlicha yondashuvlarga
+asoslanadi, buning natijasida ular tomonidan taklif qilingan
+xavfsizlik muammosi bayonlari va uni hal qilish usullari sezilarli
+darajada farqlanadi. Ikkita yondashuv eng ko'p ishlab chiqilgan
+ularning har biri xavfsizlik muammosi bo'yicha o'z qarashlariga
+asoslanadi va muayyan muammolarni hal qilishga qaratilgan - bu
+xavfsizlik siyosati va kriptografiyani rasmiy modellashtirish. Bundan
+tashqari, kelib chiqishi va hal qilinishi kerak bo'lgan vazifalari
+jihatidan har xil bo'lgan ushbu yondashuvlar bir-birini to'ldiradi:
+kriptografiya identifikatsiya, autentifikatsiya, shifrlash va
+yaxlitlikni boshqarish algoritmlari shaklida ma'lumotlarni himoya
+qilishning maxsus usullarini taklif qilishi mumkin va rasmiy
+xavfsizlik modellari xavfsiz tizimlarni ishlab chiquvchilarni
+ta'minlaydi. xavfsiz tizim arxitekturasining asosini tashkil etuvchi
+asosiy tamoyillar va uni qurish kontseptsiyasini belgilaydi.</p>
+<p class="western" style="line-height: 150%; margin-bottom: 0in"><span lang="en-US">Keyingi
+ma'ruzalarning asosiy maqsadi axborot tizimlarini himoya qilish
+usullari qurilgan asosiy tamoyillar bilan tanishishdir.</span></p>
+<p class="western" style="line-height: 150%; text-indent: 0.49in; margin-bottom: 0in">
+<span lang="en-US">Birinchi modellardan biri 1977 yilda nashr etilgan
+Beebe (Biba) modeli edi. Unga ko'ra, barcha sub'ektlar va ob'ektlar
+oldindan bir nechta kirish darajalariga bo'linadi, so'ngra ularning
+o'zaro ta'siriga quyidagi cheklovlar qo'yiladi:</span></p>
+<p class="western" style="line-height: 150%; margin-bottom: 0in">•
+<span lang="en-US">sub'ekt kirish darajasi pastroq bo'lgan
+sub'ektlarni ijro etishga chaqira olmaydi;</span></p>
+<p class="western" style="line-height: 150%; margin-bottom: 0in">•
+<span lang="en-US">Mavzu yuqoriroq kirish darajasiga ega ob'ektlarni
+o'zgartira olmaydi.</span></p>
+<h2 lang="en-US" class="western" style="line-height: 150%"><a name="_Toc517181670"></a><a name="_Toc517181120"></a><a name="_Toc184908383"></a>
+1. Xarrison-Ruzzo-Ullman modeli</h2>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.01in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">A={a1,..., an} umumiy
+huquqlarning quyidagi cheklangan to'plamlaridan tashkil topgan tipik
+xavfsizlik tizimi modelini ko'rib chiqaylik;</span></font></p>
+<ol>
+	<ul>
+		<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+		<font color="#000000"><span lang="en-US">boshlang'ich sub'ektlar S0
+		va ob'ektlar O0;</span></font></p></li>
+		<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+		<font color="#000000"><span lang="en-US">a(X1, ..., Xn)
+		ko'rinishdagi C buyruqlari , bu erda a - nom; X1, ..., Xn -
+		ob'ektlarga ishora qiluvchi rasmiy parametrlar.</span></font></p></li>
+	</ul>
+</ol>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Kirish matritsasining
+elementlari umumiy huquqlar to'plamidan olingan kirish huquqlaridir.
+M kirish matritsasi elementlari o'zgarganda tizim holatlari
+o'zgaradi.Tizimga bo'lgan so'rovlar quyidagi ko'rinishda ifodalanishi
+mumkin:</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">agar M[s1, o1] da a1 va</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">M[s2, o2] da a2 va</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Men M[sm,om] ichidaman</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">op1,</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">op2,</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">ochiq.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Bundan
+tashqari,</span></font> name="Object1" align="bottom"/>
+<font color="#000000"><span lang="en-US">aj</span></font> name="Object2" align="bottom"/>
+<font color="#000000"><span lang="en-US">Operatsiya
+operatsiyasi quyidagi ibtidoiy operatsiyalardan biridir:</span></font></p>
+<ol>
+	<ul>
+		<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+		<font color="#000000">a kiriting (s, 0);</font></p></li>
+		<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+		<font color="#000000">a ni(lar, 0) o'chirish;</font></p></li>
+		<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+		<font color="#000000">mavzu yaratish;</font></p></li>
+		<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+		<font color="#000000">ob'ektni yaratish o;</font></p></li>
+		<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+		<font color="#000000">mavzuni yo'q qilish;</font></p></li>
+		<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+		<font color="#000000">ob'ektni yo'q qilish o.</font></p></li>
+	</ul>
+</ol>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000">Ushbu operatsiyalarning semantikasi aniq. Q0 va
+o'ng a konfiguratsiyasiga ega bo'lgan tizim uchun, agar Q0 holatida
+tizimga so'rovlar ketma-ketligi bo'lmasa, tizim a uchun xavfsiz deb
+aytishimiz mumkin, natijada o'ng a yacheykaga yoziladi. uni o'z
+ichiga olmaydi. Ushbu turdagi tizimlar uchun ikkita xavfsizlik
+teoremasi mavjud. Birinchisi, mono-operatsion tizimlarning
+xavfsizligi bilan bog'liq. </font><font color="#000000"><span lang="en-US">Mono
+operatsion tizim deganda har bir so'rov faqat bitta operatsiyaga ega
+bo'lgan tizimga aytiladi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.01in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><b>12.1 teorema.</b></span></font><font color="#000000"><span lang="en-US">Mono
+operatsion tizim berilgan huquq uchun xavfsiz yoki xavfsiz emasligini
+aniqlash algoritmi mavjud a.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.01in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Ikkinchi teorema shuni
+ko'rsatadiki, umumiy so'rovlarga ega tizim uchun xavfsizlik muammosi
+hal etilmaydi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><b>12.2 teorema.</b></span></font><font color="#000000"><span lang="en-US">Umumiy
+so'rovlarga ega tizimda berilgan huquq a uchun xavfsizlikni aniqlash
+muammosi hal etilmaydi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Xarrison, Ruzzo va Ullman
+monoton tizimlar (yo'q qilish va o'chirish operatsiyalari mavjud
+bo'lmagan tizimlar), yaratish operatsiyalarini o'z ichiga olmaydigan
+tizimlar va mono-shartli tizimlar (faqat bitta shartni talab
+qiladigan tizimlar) xavfsiz ekanligini ko'rsatdi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Ixtiyoriy kirish
+modellarining afzalliklari yaxshi himoya granularligi va nisbatan
+sodda amalga oshirishni o'z ichiga oladi. Ushbu turdagi modellarni
+amalga oshirishga misol sifatida kirish matritsasi deb ataladigan
+narsalarni keltirish mumkin, uning satrlari tizim sub'ektlariga,
+ustunlari esa ob'ektlarga mos keladi; matritsa elementlari kirish
+huquqlarini tavsiflaydi. Ular asosida sintez qilingan tizimlarda
+yuzaga keladigan muammolar keyingi paragrafda ko'rsatilgan.</span></font></p>
+<p class="western" style="line-height: 150%; margin-bottom: 0in"><a name="_Toc184908384"></a>
+<span lang="en-US"><b>Majburiy kirish modellari</b></span></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Ixtiyoriy kirish modellari
+yaxshi granulalar himoyasini ta'minlagan holda bir qator
+kamchiliklarga ega. Xususan, DAC asosida qurilgan tizimlarda
+troyanlar (troyan otlari) muammosi mavjud. Troyan oti istalgan
+harakatni amalga oshirishi kutilayotgan, ammo kutilmagan va
+istalmagan harakatlarni amalga oshiradigan har qanday dastur sifatida
+belgilanishi kerak. Shunday qilib, troyan juda yaxshi mahsulot bo'lib
+ko'rinishi mumkin, lekin aslida u kutilganidan ham xavfliroq bo'lib
+chiqishi mumkin.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.01in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Troyan oti qanday ishlashini
+tushunish uchun esda tutingki, foydalanuvchi kompyuterda dasturni
+chaqirganda,</span></font><span lang="en-US"> </span><font color="#000000"><span lang="en-US">tizim
+ko'pincha foydalanuvchidan yashirin bo'lgan ba'zi operatsiyalar
+ketma-ketligini boshlaydi. Ushbu operatsiyalar odatda operatsion
+tizim tomonidan boshqariladi. Troyanlar foydalanuvchi bunday
+ketma-ketlikni boshlaganida, odatda tizim uni kutilganidek ishlab
+chiqarishiga ishonishiga tayanadi. Bunday holda, qoidabuzar troyan
+dasturining versiyasini yozishi mumkin, u jabrlanuvchi foydalanuvchi
+nomidan ishga tushirilganda, uning ma'lumotlarini qoidabuzar
+foydalanuvchiga o'tkazadi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">DAC dan farqli o'laroq,
+Majburiy kirish (MAC) ma'lumotlarni bir foydalanuvchidan boshqasiga
+o'tkazishga cheklovlar qo'yadi. Bu troyan otlari muammosini hal
+qiladi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Ko'pgina MAC tizimlarini
+qurish asosidagi va qolgan MAC modellarini keltirib chiqaradigan
+klassik model Bell va Lapadoul modelidir. Afsuski, ushbu model
+kamchiliklardan xoli emas va bu kamchiliklarni bartaraf etish uchun
+ba'zi o'ziga xos modellar yaratilgan. Bo'limni yakunlashda biz ma'lum
+talablarni hisobga olgan holda ixtisoslashtirilgan modellarni
+tavsiflaymiz, ularga muvofiq ma'lum bir model sintezlanadi.</span></font></p>
+<h2 lang="en-US" class="western" style="line-height: 150%"><a name="_Toc517181671"></a><a name="_Toc517181121"></a><a name="_Toc184908385"></a>
+10.2. Bell va Lapadula modeli</h2>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Bell va LaPadoule Modeli
+(BLM) deb nomlangan model hali ham kompyuter xavfsizligi sohasidagi
+tadqiqot va ishlanmalarga katta ta'sir ko'rsatmoqda. Buni
+bibliografiyadagi asl BLMga havola qiladigan juda ko'p turli xil
+hujjatlar tasdiqlaydi. Ushbu model MAC qurilishining asosini tashkil
+qiladi. BLMda aks ettirilgan g'oyalar turli xil xavfsizlik
+siyosatlarini yaratish uchun ishlatilishi mumkin.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">BLM asosidagi g'oyalar
+&quot;qog'oz dunyosi&quot; dan kelib chiqadi. Bell va Lapadula
+kompyuter tizimlari dunyosiga hujjat xavfsizligi modelini olib keldi.
+Bell va Lapadula tomonidan olib borilgan asosiy kuzatuv shundan
+iboratki, AQSh hukumatida barcha sub'ektlar va ob'ektlar past
+darajadagi (tariflanmagan) dan yuqori darajadagi (o'ta maxfiy)gacha
+bo'lgan xavfsizlik darajalari bilan bog'liq. Bundan tashqari, ular
+oqish oldini olish maqsadida, deb topildi</span></font><span lang="en-US">
+</span><font color="#000000"><span lang="en-US">ruxsat etilmagan
+sub'ektlarga ma'lumotlar, past darajadagi xavfsizlikka ega bo'lgan
+sub'ektlarga yuqori darajadagi xavfsizlik darajasiga ega ob'ektlardan
+ma'lumotlarni o'qishga ruxsat berilmaydi. Bu birinchi BLM qoidasiga
+olib keladi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><i>Oddiy xavfsizlik
+mulki,</i></span></font><font color="#000000"><span lang="en-US">“No
+Read Up” (NRU) qoidasi sifatida ham tanilgan bo‘lib, xs
+xavfsizlik darajasiga ega bo‘lgan sub’ekt ma’lumotni faqat xo
+xavfsizlik darajasiga ega ob’yektdan faqat xs xo dan ustun
+bo‘lsagina o‘qiy olishini bildiradi. Bu shuni anglatadiki, agar
+BLM modeli qoidalarini qondiradigan tizimda maxfiy kirish darajasiga
+ega bo'lgan sub'ekt o'ta maxfiy deb tasniflangan ob'ektdan ma'lumotni
+o'qishga harakat qilsa, bunday kirishga ruxsat berilmaydi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Bell va Lapadula o'z
+modellarini yaratishda qo'shimcha kuzatishni amalga oshirdilar: AQSh
+hukumati sub'ektlarga ma'lumotni joylashtirish yoki uni xavfsizlik
+darajasi pastroq bo'lgan ob'ektlarga yozishga ruxsat bermaydi. Misol
+uchun, o'ta maxfiy hujjat tasniflanmagan axlat qutisiga qo'yilsa,
+ma'lumotlar sizib chiqishi mumkin. Bu ikkinchi BLM qoidasiga olib
+keladi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><i>Mulk –*,</i></span></font><font color="#000000"><span lang="en-US">No
+Write Down (NWD) qoidasi sifatida tanilgan bo'lib, xs xavfsizlik
+sub'ekti xs xavfsizlik darajasiga ega bo'lgan ob'ektga ma'lumotni xo
+ko'rsatkichi xs ustidan ustun bo'lgan taqdirdagina yozishi
+mumkinligini bildiradi. Bu shuni anglatadiki, agar BLM modeli
+qoidalariga javob beradigan tizimda o'ta maxfiy kirish darajasiga ega
+bo'lgan sub'ekt tasniflanmagan ob'ektga ma'lumot yozishga harakat
+qilsa, bunday kirishga ruxsat berilmaydi. -* xususiyatini kiritish
+troyan otlari muammosini hal qiladi, chunki troyan otlariga xos
+bo'lgan pastroq xavfsizlik darajasiga ma'lumot yozish taqiqlanadi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Yozmaslik qoidasi ba'zi BLM
+ilovalarining katta soddalashtirilganidir. Shunday qilib, ba'zi
+tavsiflar kirish turining batafsil kontseptsiyasini o'z ichiga oladi
+(masalan, qo'shish va bajarish). Bundan tashqari, ko'plab BLM
+modellari BLM ning barcha afzalliklarini saqlab qolgan holda yaxshi
+granulalar himoyasini ta'minlash uchun diskret himoya
+kontseptsiyasini o'z ichiga oladi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">BLM yozish va o'qishni
+taqiqlash qoidalari ma'lumotlarning ruxsatsiz manbalarga oqib
+ketishining oldini olish bo'yicha intuitiv tushunchalarga javob
+beradi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.04in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">BLMni rasmiylashtirishni
+ko'rib chiqing. Belgilang:</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">S - sub'ektlar to'plami;</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">O - ob'ektlar to'plami;</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">L - xavfsizlik
+darajalarining panjarasi;</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.04in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">F : S</span></font> name="Object3" align="bottom"/>
+<font color="#000000"><span lang="en-US">O→L
+- sub'ektlar va ob'ektlar uchun qo'llaniladigan funksiya; berilgan
+funktsiya ma'lum bir holatda o'z argumentlarining xavfsizlik
+darajalarini belgilaydi;</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.04in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">V - holatlar to'plami -
+tartiblangan juftliklar to'plami (F, M), bu erda M - ob'ektlarga
+tizim sub'ektlarining kirish matritsasi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.04in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Tizim R tizimiga so'rovlar
+to'plami va T : (V×R)→V o'tish funktsiyasi bilan aniqlangan v0
+boshlang'ich holati bilan ifodalanadi, shunda tizim so'rov
+bajarilgandan so'ng bir holatdan holatga o'tadi. Keling, BLM uchun
+isbotlangan asosiy xavfsizlik teoremasini (FST) isbotlash uchun zarur
+bo'lgan ta'riflarni shakllantiramiz.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.04in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><b>Ta'rif 12.1.</b></span></font><font color="#000000"><span lang="en-US">Holat
+(F, M) o'qish uchun xavfsizdir (NRU), agar shunday bo'lsa</span></font>  name="Object4" align="bottom"/>
+<font color="#000000"><span lang="en-US">s</span></font> name="Object5" align="bottom"/>
+<span style="font-variant: small-caps"><font color="#000000"><span lang="en-US">S</span></font></span><font color="#000000"><span lang="en-US">va
+uchun</span></font><img src="42f7bd80ad405ed25a32f19aa89f5b50_html_9b78c794.gif" name="Object6" align="bottom"/>
+<span style="font-variant: small-caps"><font color="#000000"><span lang="en-US">o</span></font></span> name="Object7" align="bottom"/>
+<font color="#000000"><span lang="en-US">Oh
+o'qish</span></font> name="Object8" align="bottom"/>
+<font color="#000000"><span lang="en-US">M[s,
+o]→F(s)</span></font><img src="42f7bd80ad405ed25a32f19aa89f5b50_html_b84b0fc9.gif" name="Object9" align="bottom"/>
+<font color="#000000"><span lang="en-US">F(o).</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><b>Ta'rif 12.2.</b></span></font><font color="#000000"><span lang="en-US">Holat
+(F, M) yozish uchun xavfsizdir (NWD, *-xususiyat), agar va faqat</span></font><img src="42f7bd80ad405ed25a32f19aa89f5b50_html_9b78c794.gif" name="Object10" align="bottom"/>
+<font color="#000000"><span lang="en-US">s</span></font> name="Object11" align="bottom"/>
+<font color="#000000"><span lang="en-US">S
+va uchun</span></font><img src="42f7bd80ad405ed25a32f19aa89f5b50_html_9b78c794.gif" name="Object12" align="bottom"/>
+<span style="font-variant: small-caps"><font color="#000000"><span lang="en-US">haqida</span></font></span> name="Object13" align="bottom"/>
+<font color="#000000"><span lang="en-US">Oh
+rekord</span></font> name="Object14" align="bottom"/>
+<font color="#000000"><span lang="en-US">M[s,
+o]→F(o)≥F(s).</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.05in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><b>Ta'rif 12.3.</b></span></font><font color="#000000"><span lang="en-US">Davlat
+faqat va faqat o'qish va yozish xavfsiz bo'lsa xavfsiz hisoblanadi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.04in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><b>Teorema (OTB).</b></span></font><font color="#000000"><span lang="en-US">Tizim
+(v0, R, T) agar v0 holati xavfsiz bo'lsa va T shunday bo'lsa xavfsiz
+bo'ladiki, R, T(v, c) = v so'rovlarining cheklangan ketma-ketligini
+bajargandan so'ng v0 dan boshlab istalgan v holatiga erishish mumkin.
+*, bu erda v = (F, M) va v* = (F*, M*), tizimning (T) holatdan
+holatga o'tishlari quyidagi cheklovlarga bog'liq.</span></font><img src="42f7bd80ad405ed25a32f19aa89f5b50_html_9b78c794.gif" name="Object15" align="bottom"/>
+<font color="#000000"><span lang="en-US">s</span></font> name="Object16" align="bottom"/>
+<font color="#000000"><span lang="en-US">S
+va uchun</span></font><img src="42f7bd80ad405ed25a32f19aa89f5b50_html_9b78c794.gif" name="Object17" align="bottom"/>
+<font color="#000000"><span lang="en-US">o</span></font> name="Object18" align="bottom"/>
+<font color="#000000">O:</font></p>
+<ul>
+	<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+	<font color="#000000"><span lang="en-US">o'qisa</span></font> name="Object19" align="bottom"/>
+<font color="#000000"><span lang="en-US">M*[s,
+	o] va o'qish </span></font><font color="#000000"><font face="Cambria Math, serif"><span lang="en-US">∉</span></font></font><font color="#000000"><span lang="en-US">M[s,
+	o], keyin F*(s)≥F*(o);</span></font></p></li>
+	<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+	<font color="#000000"><span lang="en-US">o'qisa</span></font> name="Object20" align="bottom"/>
+<font color="#000000"><span lang="en-US">M[s,
+	o] va F*(s)&lt;F*(o), keyin </span></font><font color="#000000"><font face="Cambria Math, serif"><span lang="en-US">∉</span></font></font><font color="#000000"><span lang="en-US">M*[s,
+	o] o‘qiladi;</span></font></p></li>
+	<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+	<font color="#000000"><span lang="en-US">rekord bo'lsa</span></font> name="Object21" align="bottom"/>
+<span style="font-variant: small-caps"><font color="#000000"><span lang="en-US">Xonim,</span></font></span><font color="#000000"><span lang="en-US">o]
+	va </span></font><font color="#000000"><font face="Cambria Math, serif"><span lang="en-US">∉</span></font></font><font color="#000000"><span lang="en-US">M[s,
+	o] belgisi, keyin F*(o)≥F*(s);</span></font></p></li>
+	<li><p class="western" align="left" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+	<font color="#000000"><span lang="en-US">rekord bo'lsa</span></font> name="Object22" align="bottom"/>
+<font color="#000000"><span lang="en-US">M[s,
+	o] u F (o)&lt;F (s), keyin </span></font><font color="#000000"><font face="Cambria Math, serif"><span lang="en-US">∉</span></font></font><font color="#000000"><span lang="en-US">
+	M*[s, o].</span></font></p></li>
+</ul>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><b>Isbot</b></font></p>
+<ol>
+	<li><p class="western" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+	<font color="#000000"><i>Kerak.</i></font><font color="#000000">Keling,
+	tizim xavfsiz deb faraz qilaylik. v0 holati ta'rifi bo'yicha
+	xavfsizdir. Agar R dan T(v, c) = v* so‘rovlarining chekli
+	ketma-ketligini bajargandan so‘ng v0 holatidan erishish mumkin
+	bo‘lgan v holati mavjud bo‘lsa-da, v* T dagi dastlabki ikkita
+	cheklovdan birini qanoatlantirmasa ham, v* bo‘ladi. erishish
+	mumkin bo'lgan holat, lekin o'qish xavfsizligi chekloviga zid. Agar
+	v* oxirgi ikkita T cheklashdan birini qoniqtirmasa, v* erishish
+	mumkin bo'lgan holat bo'ladi, lekin yozish xavfsizligi chekloviga
+	mos kelmaydi. Qanday bo'lmasin, tizim xavfsiz emas.</font></p></li>
+	<li><p class="western" style="line-height: 150%; orphans: 0; widows: 0; margin-bottom: 0in; ">
+	<font color="#000000"><span lang="en-US"><i>Adekvatlik.</i></span></font><font color="#000000"><span lang="en-US">Keling,
+	tizim xavfsiz emas deb faraz qilaylik. Bu holda, v0 xavfli bo'lishi
+	kerak yoki R so'rovlarining cheklangan ketma-ketligi bajarilgandan
+	so'ng v0 holatidan kirish mumkin bo'lgan v holati xavfli bo'lishi
+	kerak.Agar v0 xavfli bo'lsa, hamma narsa isbotlangan. Agar v0
+	xavfsiz bo'lsa, deylik, v* so'rovlar ketma-ketligidagi birinchi
+	xavfli holat. Bu T(v, c)=v* kabi xavfsiz holat v mavjudligini
+	bildiradi, bunda v* xavfsiz emas. Ammo bu T.ga nisbatan to'rtta
+	xavfsizlik cheklovlariga zid keladi.</span></font></p></li>
+</ol>
+<p class="western" style="line-height: 150%; orphans: 0; widows: 0; text-indent: 0.38in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><i>Teorema isbotlangan</i></span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Barcha afzalliklarga
+qaramay, BLMni amaliy loyihalash va real kompyuter tizimlarini ishlab
+chiqish kontekstida qo'llashda bir qator texnik muammolar paydo
+bo'lishi ma'lum bo'ldi. Bu savollar BLM afzalligi - uning
+soddaligining mantiqiy natijasidir. Muayyan turdagi tizimlar uchun
+xavfsizlik siyosatini yaratish masalalarini ko'rib chiqishda
+muammolar paydo bo'ladi, ya'ni ko'rib chiqishning kamroq mavhum
+darajasida. Shu nuqtai nazardan, modelning tizimli komponenti
+murakkablashadi, bu esa BLMning klassik ko'rinishida mos kelmasligiga
+olib kelishi mumkin. Natijada, kompyuter xavfsizligi dunyosida BLM
+ning xavfsiz tizimlarni yaratishda qo'llanilishi haqida juda ko'p
+bahs-munozaralar mavjud.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Keling, BLM tanqidining bir
+qator misollarini ko'rib chiqaylik. Ulardan ba'zilari xavfsizlik
+bo'yicha adabiyotlardan olingan, boshqalari ko'pincha texnik tavsifga
+kiritilgan va BLMning &quot;majburiy tanqidi&quot; deb ataladigan
+narsani tashkil qiladi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.01in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Biz ushbu munozarani BLM
+qoidalarini qondiradigan taqsimlangan tizimlarda yuzaga keladigan
+muammoni muhokama qilishdan boshlaymiz. Ayniqsa,</span></font><span lang="en-US">
+</span><font color="#000000"><span lang="en-US">Keling, o'qish
+so'rovi komponentlar o'rtasida har ikki yo'nalishda ma'lumot oqimiga
+olib kelishini ko'rsatamiz, bu model qoidalarini buzishdir.
+Keyinchalik, kompyuter tizimidagi eng muhim vazifalarni bajaradigan
+ishonchli ob'ektlarni himoya qilish uchun ushbu modeldan foydalanish
+muammosini ko'rib chiqamiz. Biz Z tizimi deb nomlanuvchi modelni
+tavsiflash misoli bilan munozarani yakunlaymiz.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.01in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><b>Masofadan o'qish</b></span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Tarqalgan
+konfiguratsiyalardan foydalanishning so'nggi tendentsiyalarini
+hisobga olgan holda, xavfsizlik modellarini nafaqat avtonom, balki
+taqsimlangan kompyuter tizimlari uchun ham ko'rib chiqish kerak
+(tarqatilgan tizim odatda bir nechta ulangan tizimlardan iborat).
+BLMni taqsimlangan tizimlarga kengaytirishning aniq yo'li turli
+komponentlarga xavfsizlik darajalarini belgilash va o'qish/yozishni
+cheklash qoidalarini qo'llash bo'ladi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Misol uchun, ba'zi
+komponentlarga tasniflanmagandan tortib to o'ta maxfiygacha bo'lgan
+xavfsizlik darajalari tayinlanishi mumkin va BLM tamoyillari asosida
+turli tizim komponentlari o'rtasidagi ulanishlar sintezlanishi
+mumkin. Ko'rinishidan, agar A maxfiy sub'ektiga tasniflanmagan B
+ob'ektidagi ma'lumotlarni o'qishga ruxsat berilsa, hech qanday maxfiy
+ma'lumot oshkor etilmaydi. Ammo pastdan masofadan o'qish
+operatsiyasini amalga oshirishni sinchkovlik bilan o'rganib chiqqach,
+yoqimsiz kuzatish mumkin. Masofaviy komponentlar orasidagi o'qish
+operatsiyasi o'qilayotgan ob'ektdan o'qishga ruxsat so'ragan
+sub'ektga ma'lumotlar oqimiga olib keladi. Ushbu oqim xavfsizdir,
+chunki ma'lumotlar ruxsatsiz sub'ektga oshkor etilmaydi. Biroq,
+taqsimlangan konfiguratsiyada o'qish bir komponentdan boshqasiga
+so'rov orqali boshlanadi. Bunday so'rov noto'g'ri yo'nalishdagi
+ma'lumotlar oqimini tashkil qiladi (xavfsizlik darajasi pastroq
+ob'ektga yozish). Shunday qilib, taqsimlangan tizimlarda masofaviy
+o'qish faqat BLM qoidalarini buzish bo'lgan pastga yozish
+operatsiyasidan oldin bo'lsa sodir bo'lishi mumkin.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Ko'pgina tadqiqotchilar
+ushbu muammoni BLMning etarli emasligining eng ishonchli dalili deb
+hisoblashadi. Biroq, amalda bu muammo ko'pincha ahamiyatsiz; yuqori
+darajadagi sub'ektdan past darajadagi ob'ektga axborot oqimi kirish
+so'rovi bilan cheklanishini ta'minlash uchun tizimga masofaviy
+so'rovlarni qayta ishlashning qo'shimcha vositalarini joriy etish
+kifoya. Darhaqiqat, ba'zi arxitekturalar taqsimlangan tizimlarda
+bunday so'rovlar va axborot oqimini boshqaradigan alohida
+komponentlarni taklif qiladi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><b>Ishonchli mavzular</b></span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">BLM qoidalarining oldingi
+tavsifida qaysi sub'ektlar ushbu qoidalarga bo'ysunishi kerakligi
+ko'rsatilmagan. Misol uchun, kompyuter tizimlarida odatda
+foydalanuvchilarni qo'shish va o'chirish, nosozliklardan keyin
+funksionallikni tiklash, maxsus dasturiy ta'minotni o'rnatish,
+operatsion tizim yoki ilovalardagi xatolarni tuzatish va boshqalar
+orqali tizimni boshqaradigan administrator mavjud. Shubhasiz, bunday
+ma'murlar manfaatlaridan kelib chiqadigan jarayonlarni BLM qoidalari
+yoki ularga ma'muriy funktsiyalarni bajarishga imkon bermaydigan
+boshqa modellar bilan nazorat qilib bo'lmaydi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Ushbu kuzatish BLM qoidalari
+bilan bog'liq yana bir texnik muammoni ta'kidlaydi. Aytish mumkinki,
+ushbu qoidalar oddiy foydalanuvchilar uchun shaxsiy hayotning
+buzilishi tahdidining oldini olish uchun vositani taqdim etadi, ammo
+ishonchli sub'ektlar uchun bir xil muammo haqida hech narsa aytmaydi.
+Ishonchli ob'ektlar ma'mur manfaati uchun ishlashi mumkin. Ular,
+shuningdek, qurilma drayveri yoki xotirani boshqarish quyi tizimi
+kabi muhim xizmatlarni taqdim etadigan jarayonlar bo'lishi mumkin.
+Bunday jarayonlar ko'pincha BLM qoidalarini buzmasdan o'z
+vazifalarini bajara olmaydi. BLM ning ishonchli ob'ektlar uchun
+qo'llanilmasligini oldindan belgilangan BLM o'qish va yozish
+operatsiyalariga o'zgartirish kiritish orqali ifodalash mumkin. Ammo
+bu ta'rifni yanada aniqroq qilsa-da, ishlab chiquvchi uchun buni
+osonlashtirmaydi,</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Xavfsizlik bo'yicha
+adabiyotlarda ko'rib chiqilgan yechimlardan biri ma'lumotlar oqimi
+uchun modelni joriy etish va undan foydalanish bo'lib, yuqori
+darajadagi ma'lumotlar hech qachon pastroq darajaga tushmasligini
+talab qiladi. Ushbu modellarda past darajadagi foydalanuvchilar
+xulosa chiqara olmaydi yoki yuqori darajadagi foydalanuvchilarning
+ishiga ta'sir qila olmaydi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US"><b>Z tizimi muammosi</b></span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Jon Maklin tizim Z deb
+nomlangan tizimning kontseptual tavsifini ishlab chiqdi. Ushbu tavsif
+BLM qoidalarini qondiradigan tizim bir qator xavfsizlik muammolariga
+ega bo'lishi mumkinligini ko'rsatadi. Z tizimi ob'ektlar va ob'ektlar
+to'plamida ifodalanadi, ularning har biri tegishli xavfsizlik
+darajasiga ega. Har bir sub'ekt va ob'ekt uchun ma'lum bir vaqtda
+xavfsizlik darajalari to'plami tizimning holatini tavsiflaydi. Z
+tizimi BLMni qondiradi, agar tizimning barcha holatlarida sub'ekt va
+ob'ekt darajalarining kombinatsiyasi shunday bo'lsa, bu holatda hech
+bir sub'ekt pastga yoki yuqoriga qarab o'qiy olmaydi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Z tizimi BLM shartlariga
+javob beradi deb faraz qilsak, maxfiylikka har qanday tahdid
+aniqlanishiga ishonch hosil qilish mumkin. Biroq, Maklin bunday
+tizimlarda aniq bo'lmagan texnik tafsilotga ishora qildi. Agar
+biron-bir davlatda maxfiy sub'ekt o'ta maxfiy ob'ektni o'qishni
+xohlasa, tizim BLMni qondirar ekan, bu mumkin emas edi. Ammo
+Maklinning ta'kidlashicha, BLMda hech narsa tizim ob'ektni o'ta
+maxfiydan o'ta maxfiygacha (o'ta maxfiy foydalanuvchining ixtiyoriga
+ko'ra) &quot;maxfiylashtirish&quot; ga to'sqinlik qilmaydi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Quyidagi misol misol
+sifatida xizmat qilishi mumkin. Faraz qilaylik, yuqori darajadagi
+ishonchga ega bo'lgan sub'ekt tasniflash darajasi ham A ga teng
+bo'lgan ob'ektdan ma'lumotni o'qiydi. Keyin bu sub'ekt ishonch
+darajasini B darajasiga tushiradi (A &gt; B). Shundan so'ng, u B
+klassifikatsiyasi bilan faylga ma'lumot yozishi mumkin. BLM rasmiy
+ravishda buzilmagan, ammo tizimning xavfsizligi buzilgan.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Aslida, McLean kirish
+so'rovlarini yuborishdan oldin ob'ektga tegishli xavfsizlik
+darajalarini belgilash orqali barcha sub'ektlar har qanday ob'ektni
+o'qishi va yozishi mumkin bo'lgan konfiguratsiyani tasvirlab berdi.
+Axborot sirini ta'minlamaydigan bunday tizimda barcha shtatlarni BLM
+talablariga javob beradigan deb hisoblash mumkin.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0.01in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Yuqorida aytilganlarning
+barchasi kitobdan kitobga va maqoladan maqolaga aylanib yurgan
+&quot;klassik formulasida&quot; BLM modeli uchun to'g'ri keladi. Ammo
+mualliflar tomonidan taqdim etilgan original modelda kuchli va zaif
+xotirjamlik talabi kiritilgan. Ushbu talablar Z-tizim muammosini
+bartaraf qiladi. Keling, ularni ko'rib chiqaylik.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-right: 0in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Kuchli osoyishtalik qoidasi
+shuni ko'rsatadiki, sub'ektlar va ob'ektlarning xavfsizlik darajalari
+tizimning ishlashi davomida hech qachon o'zgarmaydi. Ushbu qoidani
+ma'lum bir tizimda amalga oshirish orqali, yuqorida tavsiflangan
+mumkin bo'lgan muammolar turi hech qachon yuzaga kelmaydi degan
+xulosaga kelish mumkin. Tizimda bunday amalga oshirishning aniq
+kamchiliklari operatsiyalarni bajarishda moslashuvchanlikni
+yo'qotishdir.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Kichkina tinchlik qoidasi
+shuni ko'rsatadiki, sub'ektlar va ob'ektlarning xavfsizlik darajalari
+tizim faoliyati davomida hech qachon berilgan xavfsizlik siyosatini
+buzadigan tarzda o'zgartirilmaydi. Ushbu qoida sub'ektlar va
+ob'ektlarning xavfsizlik darajalari o'zgargan vaqt davomida harakat
+qilishdan bosh tortishini talab qilishi mumkin. Masalan, ob'ektga
+ob'ekt tomonidan kirish paytida uning xavfsizlik darajasi hech qachon
+o'zgarmasligini xohlashingiz mumkin. Biroq, agar operatsiya
+xavfsizlik darajasining o'zgarishi bilan aralashib ketgan bo'lsa, bu
+xavfsizlik buzilishiga olib kelmaydi (masalan, tasniflanmagan
+ob'ektda o'qish operatsiyasi jarayonida sub'ekt maxfiydan to'liq
+sirga o'tadi), u holda zaif xotirjamlik qoidasi. hali ham kuzatiladi.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.5in; margin-bottom: 0in; ">
+<font color="#000000"><span lang="en-US">Darhaqiqat, Z tizimi
+modellar algebrasini tavsiflaydi, ularning eng qat'iysi (asosiy)
+kuchli xotirjamlikka ega BLM (modelning hech bir sub'ekti uning
+tasnifini o'zgartira olmaydi) va eng zaif (yuqori) klassik modeldagi
+BLMdir. sub'ektlar uchun tasnifni o'zgartirish uchun hech qanday
+cheklovlarsiz shakllantirish.</span></font></p>
+<p class="western" style="line-height: 150%; text-indent: 0.49in; margin-bottom: 0in">
+<span lang="en-US"><b>Gogen-Mesiger modeli</b></span><span lang="en-US">(Goguen-Mesegueg),
+ular tomonidan 1982 yilda kiritilgan, avtomatlar nazariyasiga
+asoslanadi. Unga ko'ra, tizim har bir harakat bilan bir ruxsat
+etilgan holatdan faqat bir nechta boshqa holatga o'tishi mumkin.
+Ushbu himoya modelidagi sub'ektlar va ob'ektlar guruhlarga -
+domenlarga bo'lingan va tizimning bir holatdan ikkinchisiga o'tishi
+faqat ruxsat etilgan jadvalga muvofiq amalga oshiriladi, bu sub'ekt,
+aytaylik, C domenidan qanday operatsiyalarni bajarishi mumkinligini
+ko'rsatadi. D domenidagi ob'ektda bajarish Ushbu modelda tizim bir
+ruxsat etilgan holatdan ikkinchisiga o'tganda, tizimning umumiy
+yaxlitligini ta'minlaydigan tranzaktsiyalardan foydalaniladi.</span></p>
+<p class="western" style="line-height: 150%; text-indent: 0.49in; margin-bottom: 0in">
+<span lang="en-US">Sazerlend (ingliz tilidan. Sutherland dan) 1986
+yilda nashr etilgan himoya modeli sub'ektlar va axborot oqimlarining
+o'zaro ta'siriga qaratilgan. Oldingi modelda bo'lgani kabi, bu erda
+biz ko'plab ruxsat etilgan holatlar kombinatsiyasi va ba'zi
+boshlang'ich pozitsiyalar to'plamiga ega davlat mashinasidan
+foydalanamiz. Ushbu model bir holatdan ikkinchisiga o'tish
+funktsiyalarining bir nechta kompozitsiyalarining xatti-harakatlarini
+o'rganadi.</span></p>
+<p class="western" style="line-height: 150%; text-indent: 0.49in; margin-bottom: 0in">
+<span lang="en-US">Axborot xavfsizligi nazariyasida 1987-yilda nashr
+etilgan va 1989-yilda oʻzgartirilgan Klark-Uilson xavfsizlik modeli
+(Klark-Uilson) muhim rol oʻynaydi. Ushbu model tranzaksiyalarning
+keng qoʻllanilishiga va foydalanish huquqini sinchkovlik bilan
+roʻyxatdan oʻtkazishga asoslangan. ob'ektlarga sub'ektlar. Ammo bu
+modelda birinchi marta ushbu muammoda uchinchi tomonning xavfsizligi
+tekshiriladi - butun xavfsizlik tizimini qo'llab-quvvatlovchi tomon.
+Axborot tizimlarida bu rolni odatda supervayzer dasturi bajaradi.
+Bundan tashqari, Klark-Uilson modelida tranzaktsiyalar birinchi marta
+tekshirish usuli bo'yicha qurilgan, ya'ni sub'ekt nafaqat uning
+buyrug'ini bajarishdan oldin, balki bajarilgandan keyin ham
+aniqlangan. Bu muallifni aniqlash va buyruqning o'zi o'rtasidagi
+hozirgi vaqtda uni almashtirish muammosini bartaraf etishga imkon
+berdi.</span></p>
+<p lang="en-US" class="western" style="line-height: 100%; margin-bottom: 0in">
+<br/>
+
+</p>
+    </div>
+  
+</body>
+</html>

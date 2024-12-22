@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TATUFF - Kiber huquq va kiberetika</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .menyu {
+            display: flex;
+            justify-content: space-between;
+            background-color: #fff;
+            padding: 0px 30px;
+        }
+        .header {
+            background-color: #fff;
+            color: white;
+            text-align: center;
+            display: flex;
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            justify-content: flex-start;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #fff;
+            padding-top: 13px;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            justify-content: flex-end;
+        }
+        .nav a {
+            color: #272828;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .nav a:hover{
+            color: #5fcf80;
+        }
+        .active {
+            color: #5fcf80;
+        }
+        .content {
+            padding-top: 20px;
+            padding-bottom: 0px;
+            text-align: center;
+            background-color:#5fcf80;
+        }
+        .content h1 {
+            margin-bottom: 20px;
+            color: #fff;
+            padding: 20px;
+        }
+        .breadcrumb {
+            padding: 20px 30px;
+            background-color:#4dc872;
+            font-size: 20px;
+            font-family:sans-serif;
+            text-align: left;
+        }
+        .breadcrumb a  {
+            color: #fff;
+            text-decoration: none;
+            border: 3px solid #4dc872;
+            padding: 8px 10px;
+        }
+        .breadcrumb a:hover {
+            color:rgb(228, 226, 226);
+            text-decoration: underline;
+        }
+        .breadcrumb  .aktive {
+            color:rgb(244, 53, 27);
+        }
+        .text-area {
+            padding: 20px;
+            background-color:rgb(243, 239, 234);
+            margin: 20px auto;
+            width: 80%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            color: black;
+        }
+        .text-area h2, h3 {
+            text-align: center;
+        }
+        .text-area pre {
+            font-size: 18px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #quiz {
+            max-width: 800px;
+            margin: 0 auto;
+            margin-top: 2%;
+            padding: 80px;
+            background-color: #66ebf0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(198, 222, 60, 0.2);
+            
+        }
+        h1 {
+            text-align: center;
+            color: #333333;
+        }
+        #question {
+            margin-bottom: 20px;
+        }
+        #options {
+            display: grid;
+            gap: 10px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        button {
+            display: block;
+            margin: 0 auto;
+            padding: 10px 20px;
+            background-color: rgb(227, 238, 10);
+            color: #131313;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #8f8d8d;
+        }
+    </style>
+</head>
+<body>
+    <div class="menyu">
+        <div class="header">
+            <a href="#" style="color: #5fcf80; text-decoration: none;"><h1>TATUFF</h1></a>
+        </div>
+        <div class="nav">
+            <a href="../index.html"><h3>Bosh sahifa</h3></a>
+            <a href="../courses.html" class="active"><h3>Mavzular</h3></a>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Kiberhuquq va kiberetika</h1>
+        <div class="breadcrumb">
+            <a href="maruza4.html">Maruza</a>
+            <a href="amaliy4.html">Amaliy</a>
+            <a href="test4.html"  class="aktive">Mavzu yuzasidan test</a>
+        </div>
+    </div>
+    <div id="quiz">
+        <h1>Kiber xuquq va kiber-etika fanining maqsad va vazifalari</h1>
+        <div id="question"></div>
+        <div id="options"></div>
+        <button id="submit">Submit</button>
+    </div>
+    <script>
+        
+    
+        const quizData = [
+    {
+        question: "Mualliflik huquqi va turdosh huquqlar to'g'risidagi qonunning asosiy tushunchalari nimalarni o'z ichiga oladi?",
+        options: [
+            "Mualliflik huquqining muddatlari va ko'lamini",
+            "Mualliflik huquqi obyektlarini va turdosh huquqlarni",
+            "Mualliflik huquqini buzganlik uchun javobgarlikni",
+            "To'g'ri javob yo'q"
+        ],
+        answer: "Mualliflik huquqi obyektlarini va turdosh huquqlarni"
+    },
+    {
+        question: "Kompyuter dasturlariga bo'lgan mualliflik huquqlari qanday himoyalanadi?",
+        options: [
+            "Faqat milliy qonunlar bilan",
+            "Faqat xalqaro shartnomalar bilan",
+            "Milliy qonunlar va xalqaro shartnomalar bilan",
+            "To'g'ri javob yo'q"
+        ],
+        answer: "Milliy qonunlar va xalqaro shartnomalar bilan"
+    },
+    {
+        question: "Kompyuter dasturlarini ishlatish (vosproizvedenie) tamoyillari nima bilan bog'liq?",
+        options: [
+            "Faqat dastur yaratgan shaxs huquqlari bilan",
+            "Faqat dastur foydalanuvchilarining huquqlari bilan",
+            "Dastur muallifi va foydalanuvchilarning huquqlari bilan",
+            "To'g'ri javob yo'q"
+        ],
+        answer: "Dastur muallifi va foydalanuvchilarning huquqlari bilan"
+    },
+    {
+        question: "\"Mualliflik huquqi to'g'risidagi Butunjahon Konventsiyasi\" qachon imzolangan?",
+        options: [
+            "1948-yil",
+            "1952-yil",
+            "1967-yil",
+            "1971-yil"
+        ],
+        answer: "1952-yil"
+    },
+    {
+        question: "Kompyuter dasturlarining mualliflik huquqlari qachon boshlanadi?",
+        options: [
+            "Dastur yaratilganidan keyin bir yil o'tgach",
+            "Dastur rasmiy ro'yxatdan o'tgach",
+            "Dastur yaratilishi bilan",
+            "To'g'ri javob yo'q"
+        ],
+        answer: "Dastur yaratilishi bilan"
+    },
+    {
+        question: "EHM dasturlarining mualliflik huquqi qaysi moddada belgilangan?",
+        options: [
+            "6-moddada",
+            "8-moddada",
+            "10-moddada",
+            "12-moddada"
+        ],
+        answer: "6-moddada"
+    },
+    {
+        question: "Mualliflik huquqi ob'yektlariga nimalar kiradi?",
+        options: [
+            "Faqat matnli asarlar",
+            "Faqat grafik asarlar",
+            "EHM dasturlari, amaliy dasturlar va operatsion tizimlar",
+            "To'g'ri javob yo'q"
+        ],
+        answer: "EHM dasturlari, amaliy dasturlar va operatsion tizimlar"
+    },
+    {
+        question: "Kompyuter dasturlariga nisbatan mualliflik huquqlari qanday shakllarda himoyalanadi?",
+        options: [
+            "Faqat manba kodida",
+            "Faqat ob'yekt kodida",
+            "Har qanday shaklda, jumladan manba kodi va ob'yekt kodida",
+            "To'g'ri javob yo'q"
+        ],
+        answer: "Har qanday shaklda, jumladan manba kodi va ob'yekt kodida"
+    }
+];
+
+
+        const questionElement = document.getElementById("question");
+        const optionsElement = document.getElementById("options");
+        const submitButton = document.getElementById("submit");
+
+        let currentQuestion = 0;
+        let score = 0;
+
+        function showQuestion() {
+            const question = quizData[currentQuestion];
+            questionElement.innerText = question.question;
+
+            optionsElement.innerHTML = "";
+            question.options.forEach(option => {
+                const button = document.createElement("button");
+                button.innerText = option;
+                optionsElement.appendChild(button);
+                button.addEventListener("click", selectAnswer);
+            });
+        }
+
+        function selectAnswer(e) {
+            const selectedButton = e.target;
+            const answer = quizData[currentQuestion].answer;
+
+            if (selectedButton.innerText === answer) {
+                score++;
+            }
+
+            currentQuestion++;
+
+            if (currentQuestion < quizData.length) {
+                showQuestion();
+            } else {
+                showResult();
+            }
+        }
+
+        function showResult() {
+            document.getElementById('quiz').innerHTML = `
+                <h1>Test yakunlandi</h1>
+                <p>Sizning natijangiz: ${score}/${quizData.length}</p>
+            `;
+        }
+
+        showQuestion();
+    </script>
+</body>
+</html>
